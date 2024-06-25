@@ -9,6 +9,8 @@ import {
 } from "react-icons/fa";
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import prod from "../../assets/products/earbuds-prod-1.webp";
+
+
 const SingleProduct = () => {
   return (
     <div className="single-product-main-content">
@@ -22,13 +24,13 @@ const SingleProduct = () => {
             <span className="price">Price</span>
             <span className="desc">Product description</span>
 
-            <div className="card-buttons">
+            <div className="cart-buttons">
               <div className="quantity-buttons">
                 <span>-</span>
                 <span>5</span>
                 <span>+</span>
               </div>
-              <button>
+              <button className="add-to-cart-button">
                 <FaCartPlus size={20} />
                 ADD TO CART
               </button>
@@ -39,7 +41,7 @@ const SingleProduct = () => {
             <div className="info-item">
               <span className="text-bold">
                 Category:
-                <span>Headphones</span>
+                <span> Headphones</span>
               </span>
 
               <span className="text-bold">
