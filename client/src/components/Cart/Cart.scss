@@ -18,7 +18,6 @@
     height: 100%;
   }
   .cart-content {
-    display: flex;
     width: 100%;
     height: 100%;
     background: white;
@@ -72,6 +71,8 @@
         font-size: 120px;
         opacity: 0.1;
       }
+      span {
+      }
       .return-cta {
         outline: 0;
         border: 0;
@@ -85,6 +86,9 @@
         color: white;
         background: #8e2de2;
         border-bottom: 3px solid #6516aa;
+        svg {
+          margin-right: 10px;
+        }
       }
     }
 

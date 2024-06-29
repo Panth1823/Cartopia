@@ -47,7 +47,7 @@
       .quantity-buttons {
         width: fit-content;
         display: flex;
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.1);
         height: 30px;
         margin-bottom: 8px;
         span {
@@ -60,14 +60,14 @@
           color: #6b6b6b;
           &:nth-child(1) {
             font-size: 18px;
-            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
           }
           &:nth-child(2) {
             width: 40px;
           }
           &:nth-child(3) {
             font-size: 18px;
-            border-left: 1px solid rgba(0, 0, 0, 0.2);
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
           }
         }
       }

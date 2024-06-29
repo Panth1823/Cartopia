@@ -14,12 +14,10 @@
     }
   }
   .category-title {
-    font-size: 34px;
-  }
-  .products-container {
-    margin: 20px 0;
+    font-size: 24px;
+
     @include md {
-      margin: 50px 0;
+      font-size: 34px;
     }
   }
 }
