@@ -17,7 +17,7 @@ const SingleProduct = () => {
   const [quantity, setQuantity] = useState(0); // Initialize quantity with 0 or 1 as appropriate
   const { id } = useParams();
   const { data } = useFetch(`/api/products?populate=*&[filters][id]=${id}`);
-  const { handleAddToCart, handleRemoveFromCart } = useContext(Context);
+  const { handleAddToCart } = useContext(Context);
   const increment = () => {
     setQuantity((prevState) => prevState + 1);
   };

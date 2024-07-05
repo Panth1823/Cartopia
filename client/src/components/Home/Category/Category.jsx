@@ -16,7 +16,7 @@ const Category = ({ categories }) => {
                 process.env.REACT_APP_DEV_URL +
                 item?.attributes?.img?.data?.attributes?.url
               }
-              alt=""
+              alt="img"
             />
           </div>
         ))}

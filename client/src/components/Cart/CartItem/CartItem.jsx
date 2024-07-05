@@ -1,7 +1,6 @@
-import { MdClose } from "react-icons/md";
-import prod from "../../../assets/products/earbuds-prod-1.webp";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { Context } from "../../../utils/context";
+import { MdClose } from "react-icons/md";
 import "./CartItem.scss";
 
 const CartItem = () => {
@@ -12,7 +11,13 @@ const CartItem = () => {
       {cartItems?.map((item) => (
         <div key={item.id} className="search-result-item">
           <div className="img-container">
-            <img src={prod} alt="" />
+            <img
+              src={
+                process.env.REACT_APP_STRIPE_APP_DEV_URL +
+                item.attributes?.img?.data[0].attributes.url
+              }
+              alt="img"
+            />
           </div>
           <div className="prod-details">
             <span className="name">{item.attributes.title}</span>
@@ -33,7 +38,8 @@ const CartItem = () => {
               <span>{item.attributes.quantity}</span>
               <span>x</span>
               <span className="highlight">
-                &#8377; {item.attributes.price * item.attributes.quantity}
+                <span>&#8377;</span>{" "}
+                {item.attributes.price * item.attributes.quantity}
               </span>
             </div>
           </div>
