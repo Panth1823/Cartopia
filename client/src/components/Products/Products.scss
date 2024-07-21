@@ -3,7 +3,7 @@
   margin: 50px 0;
   @include md {
     margin: 75px auto;
-    width: 1200px;
+    width: 100%;
   }
   .sec-heading {
     margin-bottom: 20px;
@@ -32,6 +32,7 @@
     gap: 10px;
     @include md {
       gap: 20px;
+      padding: 10px;
     }
   }
 }
