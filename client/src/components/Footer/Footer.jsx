@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.scss";
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
-import Payment from "../../assets/payments.png";
 const Footer = () => {
   return (
     <div className="footer">
@@ -48,8 +47,9 @@ const Footer = () => {
       </div>
       <div className="bottom-bar">
         <div className="bottom-bar-content">
-          <span className="text">Made with ❤️ by Panth Shah</span>
-          <img alt="alt" src={Payment} />
+          <span className="text">
+            Made with ☕ by <span>Panth Shah</span>
+          </span>
         </div>
       </div>
     </div>
