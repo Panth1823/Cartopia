@@ -1,18 +1,19 @@
 @import "../../css-config/mixins.scss";
 
 .main-header {
-  width: 100%;
-  padding: 0 20px;
-  background-color: #212121;
+  width: 90%;
+  backdrop-filter: blur(15px);
+  background: transparent;
   color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  z-index: 99;
-  @include sm {
-    background-color: #212121;
-  }
+  z-index: 150;
+  border-radius: 50px;
+  margin: auto;
   @include md {
-    background-color: #212121;
     padding: 0 40px;
+  }
+  @include sm {
+    border-radius: 0px;
+    width: 100%;
   }
   .header-content {
     display: flex;
@@ -22,7 +23,7 @@
     max-width: 1200px;
     margin: 0 auto;
     @include md {
-      height: 80px;
+      height: 60px;
     }
     .left {
       list-style-type: none;

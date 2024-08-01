@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.scss";
-import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -15,20 +17,18 @@ const Footer = () => {
         </div>
         <div className="col">
           <div className="title">Contact</div>
+          <div className="c-item"></div>
           <div className="c-item">
-            <FaLocationArrow />
-            <div className="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              alias repellendus sunt eveniet accusantium
-            </div>
-          </div>
-          <div className="c-item">
-            <FaMobileAlt />
+            <MdOutlineMail />
             <div className="text">9999999999</div>
           </div>
           <div className="c-item">
-            <FaEnvelope />
-            <div className="text">cartopia.store12@gmail.com </div>
+            <FaLinkedin />
+            <div className="text">linkedin.com/in/panth1823 </div>
+          </div>
+          <div className="c-item">
+            <FaGithub />
+            <div className="text">github.com/Panth1823</div>
           </div>
         </div>
         <div className="col">
