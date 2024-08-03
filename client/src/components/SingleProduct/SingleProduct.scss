@@ -19,7 +19,8 @@
       }
       .left {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: white;
+        border-radius: 10px;
         flex-shrink: 0;
         @include md {
           width: 600px;
