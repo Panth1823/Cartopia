@@ -1,5 +1,6 @@
 @import "../../css-config/mixins.scss";
 .single-product-main-content {
+  color: #fff;
   margin: 20px 0;
   @include md {
     margin: 75px 0;
@@ -54,7 +55,7 @@
           font-size: 14px;
           line-height: 20px;
           margin-bottom: 20px;
-          color: #6b6b6b;
+          color: #e4e4e4;
           @include md {
             font-size: 16px;
             line-height: 24px;
@@ -70,7 +71,7 @@
           .quantity-buttons {
             width: fit-content;
             display: flex;
-            border: 2px solid rgba(0, 0, 0, 0.2);
+            border: 2px solid #fff;
             margin-right: 10px;
             height: 50px;
             span {
@@ -80,15 +81,16 @@
               align-items: center;
               justify-content: center;
               cursor: pointer;
-              color: #6b6b6b;
+              color: #fff;
+              font-family: Montserrat;
               &:nth-child(1) {
-                border-right: 2px solid rgba(0, 0, 0, 0.2);
+                border-right: 2px solid #fff;
               }
               &:nth-child(2) {
                 width: 60px;
               }
               &:nth-child(3) {
-                border-left: 2px solid rgba(0, 0, 0, 0.2);
+                border-left: 2px solid #fff;
               }
             }
           }
@@ -134,7 +136,7 @@
               font-size: 16px;
               font-weight: 400;
               cursor: pointer;
-              color: #6b6b6b;
+              color: #fff;
             }
             svg {
               margin: 0 5px;

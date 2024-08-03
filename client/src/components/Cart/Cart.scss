@@ -8,7 +8,7 @@
   z-index: 99;
   display: flex;
   justify-content: flex-end;
-
+  z-index: 9999;
   .opac-layer {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -20,7 +20,7 @@
   .cart-content {
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgb(57, 28, 103);
     position: relative;
     z-index: 1;
     display: flex;
@@ -42,18 +42,21 @@
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
+        color: #fff;
       }
       .close-btn {
         display: flex;
         align-items: center;
         gap: 5px;
         cursor: pointer;
+        color: #fff;
         svg {
           font-size: 18px;
         }
         .text {
           text-transform: uppercase;
           font-size: 14px;
+          color: #fff;
         }
         &:hover {
           opacity: 0.5;
@@ -67,6 +70,7 @@
       align-items: center;
       gap: 20px;
       margin-top: 100px;
+      color: #fff;
       svg {
         font-size: 120px;
         opacity: 0.1;
@@ -100,12 +104,13 @@
         display: flex;
         justify-content: space-between;
         .text {
+          color: #fff;
           margin-bottom: 0;
           font-size: 20px;
           font-weight: 700;
           text-transform: uppercase;
           &.total {
-            color: #8e2de2;
+            color: #fff;
           }
         }
       }

@@ -8,9 +8,11 @@ import { Context } from "../../utils/context";
 const Home = () => {
   const { categories, setCategories, products, setProducts } =
     useContext(Context);
+    
   useEffect(() => {
     getCategories();
     getProducts();
+    // eslint-disable-next-line
   }, []);
 
   const getProducts = () => {

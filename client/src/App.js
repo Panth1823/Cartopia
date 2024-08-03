@@ -6,7 +6,7 @@ import Category from "./components/Category/Category";
 import SingleProduct from "./components/SingleProduct/SingleProduct";
 import NewsLetter from "./components/Footer/Newsletter/Newsletter";
 import AppContext from "./utils/context";
-import React from 'react';
+
 
 function App() {
   return (
