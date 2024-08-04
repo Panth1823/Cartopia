@@ -10,8 +10,9 @@ import "./Cart.scss";
 const Cart = () => {
   const { cartItems, setShowCart, cartSubTotal } = useContext(Context);
 
+  // Use import.meta.env to access environment variables
   const stripePromise = loadStripe(
-    process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY
+    import.meta.env.VITE_REACT_APP_STRIPE_PUBLISHABLE_KEY
   );
 
   const handlePayment = async () => {
@@ -28,6 +29,7 @@ const Cart = () => {
       console.log(err);
     }
   };
+
   return (
     <div className="cart-panel">
       <div className="opac-layer" onClick={() => setShowCart(false)}></div>

@@ -6,18 +6,13 @@ import "./CartItem.scss";
 const CartItem = () => {
   const { cartItems, handleRemoveFromCart, handleCartProductQuantity } =
     useContext(Context);
+
   return (
     <div className="cart-products">
       {cartItems?.map((item) => (
         <div key={item.id} className="search-result-item">
           <div className="img-container">
-            <img
-              src={
-                process.env.REACT_APP_STRIPE_APP_DEV_URL +
-                item.attributes?.img?.data[0].attributes.url
-              }
-              alt="img"
-            />
+            <img src={item.attributes?.img?.data[0].attributes.url} alt="img" />
           </div>
           <div className="prod-details">
             <span className="name">{item.attributes.title}</span>
