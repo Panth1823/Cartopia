@@ -1,3 +1,5 @@
+// cartopia_db/config/middleware.js
+
 module.exports = [
   'strapi::logger',
   'strapi::errors',
@@ -15,7 +17,14 @@ module.exports = [
       },
     },
   },
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['https://cartopia-store.vercel.app'],
+      headers: '*',
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
