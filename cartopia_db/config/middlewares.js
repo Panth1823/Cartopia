@@ -1,5 +1,3 @@
-// cartopia_db/config/middleware.js
-
 module.exports = [
   'strapi::logger',
   'strapi::errors',
@@ -9,7 +7,7 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
+          'connect-src': ["'self'", 'https:', 'https://cartopia-store.vercel.app'],
           'img-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
           'media-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
           upgradeInsecureRequests: null,
