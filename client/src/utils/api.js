@@ -1,17 +1,17 @@
 import axios from "axios";
 
-const API_BASE_URL = import.meta.env.REACT_APP_API_BASE_URL;
+const API_BASE_URL = import.meta.env.VITE_REACT_APP_DEV_URL; // Ensure this is correct
 const STRIPE_APP_KEY = import.meta.env.VITE_REACT_APP_STRIPE_APP_KEY;
 
 const params = {
     headers: {
-        Authorization: "Bearer " + STRIPE_APP_KEY,
+        Authorization: `Bearer ${STRIPE_APP_KEY}`,
     },
 };
 
 export const fetchDataFromApi = async (url) => {
     try {
-        const { data } = await axios.get(API_BASE_URL + url, params);
+        const { data } = await axios.get(`${API_BASE_URL}${url}`, params);
         return data;
     } catch (err) {
         console.log(err);
@@ -22,6 +22,6 @@ export const fetchDataFromApi = async (url) => {
 export const makePaymentRequest = axios.create({
     baseURL: API_BASE_URL,
     headers: {
-        Authorization: "Bearer " + STRIPE_APP_KEY,
+        Authorization: `Bearer ${STRIPE_APP_KEY}`,
     },
 });
