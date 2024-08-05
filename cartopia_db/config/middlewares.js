@@ -7,7 +7,7 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:', 'https://cartopia-store.vercel.app', 'https://cartopia-production.up.railway.app'],
+          'connect-src': ["'self'", 'https:'],
           'img-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
           'media-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
           upgradeInsecureRequests: null,
@@ -15,14 +15,7 @@ module.exports = [
       },
     },
   },
-  {
-    name: 'strapi::cors',
-    config: {
-      origin: ['https://cartopia-store.vercel.app'],
-      headers: '*',
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    },
-  },
+  'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
