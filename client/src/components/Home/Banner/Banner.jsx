@@ -1,18 +1,29 @@
 import "./Banner.scss";
 import BannerImg from "../../../assets/banner-img.png";
+import { useNavigate } from "react-router-dom";
+
 const Banner = () => {
+  const navigate = useNavigate();
+
+  const scrollToProducts = () => {
+    const productsSection = document.querySelector('.products-container');
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="hero-banner">
       <div className="content">
         <div className="text-content">
-          <h1>SALES</h1>
+          <h1>Cartopia</h1>
           <p>
-            Convallis interdum purus adipiscing dis parturient posuere ac a quam
-            a eleifend montes parturient posuere curae tempor
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minima
+            quos qui accusantium, aut eos.
           </p>
           <div className="ctas">
-            <div className="banner-cta">Read More</div>
-            <div className="banner-cta v2">Shop Now</div>
+            <div className="banner-cta" onClick={() => navigate('/about')}>Read More</div>
+            <div className="banner-cta v2" onClick={scrollToProducts}>Shop Now</div>
           </div>
         </div>
         <img src={BannerImg} alt="BannerImg" className="banner-img" />

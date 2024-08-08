@@ -3,6 +3,7 @@
 .product-card {
   width: calc(50% - 5px);
   margin-bottom: 20px;
+  cursor: pointer;
   @include md {
     width: calc(25% - 15px);
   }
