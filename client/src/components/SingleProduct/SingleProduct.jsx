@@ -10,7 +10,7 @@ import {
   FaCartPlus,
 } from "react-icons/fa";
 import "./SingleProduct.scss";
-
+// import Spline from '@splinetool/react-spline';
 const SingleProduct = () => {
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
@@ -39,6 +39,7 @@ const SingleProduct = () => {
               src={product?.img?.data?.[0]?.attributes?.url || ""}
               alt={product?.title || "Product Image"}
             />
+            {/* <Spline scene="https://prod.spline.design/tmpB9yh1smlO1luH/scene.splinecode" /> */}
           </div>
           <div className="right">
             <span className="name">{product?.title || "Product Title"}</span>
@@ -72,7 +73,8 @@ const SingleProduct = () => {
               <span className="text-bold">
                 Category:
                 <span>
-                 {" "} {product?.categories?.data?.[0]?.attributes?.title ||
+                  {" "}
+                  {product?.categories?.data?.[0]?.attributes?.title ||
                     "Unknown"}
                 </span>
               </span>

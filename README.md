@@ -5,41 +5,46 @@ To configure the application, create a `.env` file in the root directory of your
 ## `.env` Template for Server
 
 ```plaintext
+# General Configuration
 HOST=0.0.0.0
 PORT=1337
-APP_KEYS=YOUR_APP_KEYS_HERE
-API_TOKEN_SALT=YOUR_API_TOKEN_SALT_HERE
-ADMIN_JWT_SECRET=YOUR_ADMIN_JWT_SECRET_HERE
-TRANSFER_TOKEN_SALT=YOUR_TRANSFER_TOKEN_SALT_HERE
+APP_KEYS=<Your_App_Keys>  # Generate secure random keys
+API_TOKEN_SALT=<Your_API_Token_Salt>
+ADMIN_JWT_SECRET=<Your_Admin_JWT_Secret>
+TRANSFER_TOKEN_SALT=<Your_Transfer_Token_Salt>
 
 # Database Configuration
 DATABASE_CLIENT=postgres
-DATABASE_HOST=YOUR_DATABASE_HOST_HERE
-DATABASE_PORT=5432
-DATABASE_NAME=YOUR_DATABASE_NAME_HERE
-DATABASE_USERNAME=YOUR_DATABASE_USERNAME_HERE
-DATABASE_PASSWORD=YOUR_DATABASE_PASSWORD_HERE
-DATABASE_SSL=true
+DATABASE_HOST=<Your_Database_Host>  # e.g., localhost or your cloud database endpoint
+DATABASE_PORT=5432  # Default port for PostgreSQL
+DATABASE_NAME=<Your_Database_Name>
+DATABASE_USERNAME=<Your_Database_Username>
+DATABASE_PASSWORD=<Your_Database_Password>
+DATABASE_SSL=true  # Set to true if using SSL, false otherwise
 
 # Stripe
-STRIPE_KEY=YOUR_STRIPE_KEY_HERE
-CLIENT_URL=http://localhost:3000
+STRIPE_KEY=<Your_Stripe_Secret_Key>
+CLIENT_URL=<Your_Client_URL>  # e.g., https://cartopia-store.vercel.app
 
 # Cloudinary
-CLOUDINARY_NAME=YOUR_CLOUDINARY_NAME_HERE
-CLOUDINARY_KEY=YOUR_CLOUDINARY_KEY_HERE
-CLOUDINARY_SECRET=YOUR_CLOUDINARY_SECRET_HERE
-JWT_SECRET=YOUR_JWT_SECRET_HERE
+CLOUDINARY_NAME=<Your_Cloudinary_Cloud_Name>
+CLOUDINARY_KEY=<Your_Cloudinary_API_Key>
+CLOUDINARY_SECRET=<Your_Cloudinary_API_Secret>
+
+# JWT Secret for authentication
+JWT_SECRET=<Your_JWT_Secret>
+
 ```
 
 ## `.env` Template for Client
 
 ```plaintext
-REACT_APP_STRIPE_APP_KEY=YOUR_REACT_APP_STRIPE_APP_KEY_HERE
-REACT_APP_STRIPE_PUBLISHABLE_KEY=YOUR_REACT_APP_STRIPE_PUBLISHABLE_KEY_HERE
-REACT_APP_STRIPE_APP_PROD_URL=YOUR_REACT_APP_STRIPE_APP_PROD_URL_HERE
-REACT_APP_DEV_URL=http://localhost:1337
+VITE_REACT_APP_STRIPE_APP_KEY=<Your_Stripe_Secret_Key>
+VITE_REACT_APP_STRIPE_PUBLISHABLE_KEY=<Your_Stripe_Publishable_Key>
+VITE_REACT_APP_DEV_URL=<Your_Development_URL>  # e.g., http://localhost:3000
+REACT_APP_API_BASE_URL=<Your_API_Base_URL>  # e.g., http://localhost:1337 or https://your-api-endpoint.com
 ```
+
 ## Instructions
 
 ```plaintext
