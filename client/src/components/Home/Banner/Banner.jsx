@@ -22,7 +22,7 @@ const Banner = () => {
             quos qui accusantium, aut eos.
           </p>
           <div className="ctas">
-            <div className="banner-cta" onClick={() => navigate('/about')}>Read More</div>
+            <div className="banner-cta" onClick={() => navigate('/about')}>About Us</div>
             <div className="banner-cta v2" onClick={scrollToProducts}>Shop Now</div>
           </div>
         </div>

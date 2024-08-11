@@ -37,7 +37,7 @@
       }
     }
     .text-content {
-      color: white;
+      color: #f5f5f5;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -57,7 +57,7 @@
         font-size: 80px;
         font-weight: 700;
         line-height: 1;
-        color: white;
+        color: #a085e6;
         margin-bottom: 20px;
         @include md {
           font-size: 180px;
@@ -80,20 +80,33 @@
         justify-content: center;
         gap: 20px;
         .banner-cta {
-          text-transform: uppercase;
-          font-size: 13px;
+          font-size: 15px;
           font-weight: 500;
           width: fit-content;
           border: 2px solid white;
           padding: 10px 20px;
           transition: all ease 0.3s;
+          border-radius: 8px;
           cursor: pointer;
-          &.v2 {
-            background-color: white;
-            color: black;
+          &.banner-cta:hover{
+            background-color: #7b1fa2;
+            border: 2px solid #F5F5F5;
           }
-          &:hover {
-            opacity: 0.6;
+          &.v2 {
+            background-color: #f5f5f5;
+            color: #535353;
+            border: none;
+            border-radius: 8px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+          }
+          &.v2:hover {
+            background-color: #7b1fa2;
+            transform: transition ease 0.3s;
+            color: #f5f5f5;
+            border: none;
           }
         }
       }
