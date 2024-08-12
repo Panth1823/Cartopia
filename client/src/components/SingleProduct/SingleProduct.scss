@@ -20,9 +20,10 @@
       .left {
         cursor: pointer;
         width: 100%;
-        background-color: white;
+        background-color: #1a1a1a;
         border-radius: 10px;
         flex-shrink: 0;
+        border: 4px solid #fff;
         @include md {
           width: 600px;
           height: 600px;
@@ -31,18 +32,20 @@
           width: 100%;
           display: block;
         }
+        &.left:hover {
+          box-shadow: 4px 6px 0px 0px rgba(255, 255, 255, 1);
+        }
       }
       .right {
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
+        gap: 20px;
         @include md {
           padding: 0 35px;
         }
         .name {
           font-size: 20px;
           line-height: 28px;
-          margin-bottom: 20px;
           @include md {
             font-size: 24px;
             line-height: 32px;
@@ -51,17 +54,15 @@
         .price {
           font-size: 24px;
           line-height: 32px;
-          margin-bottom: 20px;
+          color: #ffff00;
         }
         .desc {
           font-size: 14px;
           line-height: 20px;
-          margin-bottom: 20px;
-          color: #BEBEBE;
+          color: #bebebe;
           @include md {
             font-size: 16px;
             line-height: 24px;
-            margin-bottom: 20px;
           }
         }
 
@@ -106,15 +107,17 @@
             justify-content: center;
             cursor: pointer;
             font-size: 16px;
-            color: white;
-            background: #8e2de2;
-            border-bottom: 3px solid #6516aa;
+            color: #1a1a1a;
+            background: #ffff00;
             flex-grow: 1;
             @include md {
               flex-grow: unset;
             }
             svg {
               margin-right: 10px;
+            }
+            &.add-to-cart-button:hover {
+              box-shadow: 4px 6px 0px 0px rgba(255, 255, 255, 1);
             }
           }
         }

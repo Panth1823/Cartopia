@@ -14,6 +14,8 @@
       width: calc(50% - 5px);
       cursor: pointer;
       overflow: hidden;
+      border-radius: 8px;
+      border: 4px solid #fff;
       @include md {
         width: calc(25% - 10px);
       }
@@ -22,10 +24,8 @@
         display: block;
         transition: all ease 0.3s;
       }
-      &:hover {
-        img {
-          transform: scale(1.2);
-        }
+      &.category:hover {
+        box-shadow: 4px 6px 0px 0px rgba(255, 255, 255, 1);
       }
     }
   }

@@ -6,12 +6,7 @@
   z-index: 999;
   top: 0;
   left: 0;
-  background: rgb(57, 28, 103);
-  background: radial-gradient(
-    circle,
-    rgba(57, 28, 103, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: #1a1a1a;
   transform: translateY(100%);
   animation: slideSearchWindow 0.5s ease forwards;
   .form-field {

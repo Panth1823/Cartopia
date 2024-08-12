@@ -67,8 +67,6 @@ const SingleProduct = () => {
                 ADD TO CART
               </button>
             </div>
-
-            <span className="divider" />
             <div className="info-item">
               <span className="text-bold">
                 Category:
