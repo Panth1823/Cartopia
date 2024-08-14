@@ -36,9 +36,6 @@ const Header = () => {
             <li onClick={() => navigate("/about")}>About</li>
             <li>Categories</li>
           </ul>
-          <div className="center" onClick={() => navigate("/")}>
-            Cartopia
-          </div>
           <div className="right">
             <TbSearch onClick={() => setSearchModal(true)} />
             <AiOutlineHeart />

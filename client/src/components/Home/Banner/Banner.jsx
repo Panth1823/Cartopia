@@ -1,5 +1,4 @@
 import "./Banner.scss";
-import BannerImg from "../../../assets/banner-img.png";
 import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
@@ -26,7 +25,6 @@ const Banner = () => {
             <div className="banner-cta v2" onClick={scrollToProducts}>Shop Now</div>
           </div>
         </div>
-        <img src={BannerImg} alt="BannerImg" className="banner-img" />
       </div>
     </div>
   );
