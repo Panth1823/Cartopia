@@ -52,7 +52,7 @@ const Cart = () => {
           <div className="flex flex-col items-center mt-24 gap-5 text-white">
             <BsCartX className="text-[120px] opacity-10" />
             <span>No products in the cart.</span>
-            <button className="bg-yellow-500 text-[#1a1a1a] px-4 py-2 font-medium hover:shadow-md">
+            <button className=" bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium  hover:shadow-[3px_3px_1px_rgba(255,255,255,1)]">
               RETURN TO SHOP
             </button>
           </div>
@@ -76,7 +76,7 @@ const Cart = () => {
               {/* Checkout Button */}
               <div className="p-5">
                 <button
-                    className="w-full bg-customYellow text-[#1a1a1a] py-3 text-lg font-bold uppercase hover:shadow-md"
+                  className="w-full bg-customYellow text-[#1a1a1a] py-3 text-lg font-bold uppercase hover:shadow-[3px_3px_1px_rgba(255,255,255,1)]"
                   onClick={handlePayment}
                 >
                   Checkout

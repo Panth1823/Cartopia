@@ -1,66 +1,17 @@
 import React from "react";
 import "./Footer.scss";
 // import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import { MdOutlineMail } from "react-icons/md";
+
 
 const Footer = () => {
   return (
     <>
-      {/* <div className="footer">
-        <div className="footer-content">
-          <div className="col">
-            <div className="title">About</div>
-            <div className="text">
-              Voluptatem accusantium doloremque laudantium, totam rem aperiam,
-              eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo eaque ipsa quae ab illo.
-            </div>
-          </div>
-          <div className="col">
-            <div className="title">Contact</div>
-            <div className="c-item"></div>
-            <div className="c-item">
-              <MdOutlineMail />
-              <div className="text">9999999999</div>
-            </div>
-            <div className="c-item">
-              <FaLinkedin />
-              <div className="text">linkedin.com/in/panth1823 </div>
-            </div>
-            <div className="c-item">
-              <FaGithub />
-              <div className="text">github.com/Panth1823</div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="title">Categories</div>
-            <span className="text">Headphones</span>
-            <span className="text">Smart Watches</span>
-            <span className="text">Bluetooth Speakers</span>
-            <span className="text">Wireless Earbuds</span>
-          </div>
-          <div className="col">
-            <div className="title">Pages</div>
-            <span className="text">Home</span>
-            <span className="text">About</span>
-            <span className="text">Contact Us</span>
-          </div>
-        </div>
-        <div className="bottom-bar">
-          <div className="bottom-bar-content">
-            <span className="text">
-              Made with ☕ by <span>Panth Shah</span>
-            </span>
-          </div>
-        </div>
-      </div> */}
-
-      <footer class="w-full py-14">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="max-w-3xl mx-auto">
-            <a href="https://pagedone.io" class="flex justify-center ">
+      <footer className="w-full pt-32">
+        <div className=" w-full px-4 sm:px-6 lg:px-8 bg-gray-400 flex justify-center">
+          <div className="max-w-3xl ">
+            <a href="#" className="flex justify-center pt-32 ">
               <svg
-                class="w-40 h-8"
+                className="w-40 h-8"
                 viewBox="0 0 164 33"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -133,30 +84,30 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
+            <ul className="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200 text-gray-200">
               <li>
-                <a href="#" class="text-gray-800 hover:text-gray-900">
+                <a href="#" className=" ">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" class=" text-gray-800 hover:text-gray-900">
+                <a href="#" className="  ">
                   Categories
                 </a>
               </li>
               <li>
-                <a href="#" class=" text-gray-800 hover:text-gray-900">
+                <a href="#" className="  ">
                   Products
                 </a>
               </li>
             </ul>
-            <div class="flex space-x-10 justify-center items-center mb-14">
+            <div className="flex space-x-10 justify-center items-center mb-14">
               <a
                 href="#"
-                class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+                className="block  text-white transition-all duration-500 hover:text-customYellow "
               >
                 <svg
-                  class="w-[1.688rem] h-[1.688rem]"
+                  className="w-[1.688rem] h-[1.688rem]"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="none"
@@ -169,10 +120,10 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+                className="block  text-white transition-all duration-500 hover:text-customYellow"
               >
                 <svg
-                  class="w-[1.688rem] h-[1.688rem] "
+                  className="w-[1.688rem] h-[1.688rem] "
                   viewBox="0 0 29 29"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -185,10 +136,10 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+                className="block  text-white transition-all duration-500 hover:text-customYellow "
               >
                 <svg
-                  class="w-[0.938rem] h-[1.625rem]"
+                  className="w-[0.938rem] h-[1.625rem]"
                   viewBox="0 0 15 26"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -201,10 +152,10 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+                className="block  text-white transition-all duration-500 hover:text-customYellow"
               >
                 <svg
-                  class="w-[1.875rem] h-[1.375rem]"
+                  className="w-[1.875rem] h-[1.375rem]"
                   viewBox="0 0 30 22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -218,9 +169,14 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-            <span class="text-lg text-gray-500 text-center block">
+            <span className="text-md text-white text-center block pb-32">
               Made with ☕ by{" "}
-              <a href="https://github.com/Panth1823">Panth Shah</a>
+              <a
+                href="https://github.com/Panth1823"
+                className=" hover:text-customYellow "
+              >
+                Panth Shah
+              </a>
             </span>
           </div>
         </div>

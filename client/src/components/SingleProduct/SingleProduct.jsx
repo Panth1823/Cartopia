@@ -60,13 +60,13 @@ const SingleProduct = () => {
                 </span>
               </div>
               <button
-                className="h-[50px] w-[180px] flex items-center justify-center bg-[#ffff00] text-black text-[16px] flex-grow md:flex-grow-0"
+                className="h-[50px] w-[180px] flex items-center justify-center bg-[#ffff00] text-black text-[16px] flex-grow md:flex-grow-0 hover:shadow-[3px_3px_1px_rgba(255,255,255,1)]"
                 onClick={() => {
                   handleAddToCart(data?.data?.[0], quantity);
                   setQuantity(1);
                 }}
               >
-                <FaCartPlus size={20} className="mr-2" />
+                <FaCartPlus size={20} className="mr-2 " />
                 ADD TO CART
               </button>
             </div>
