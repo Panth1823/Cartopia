@@ -19,6 +19,7 @@
       position: relative;
       color: #fff;
       .name {
+        text-transform: capitalize;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -37,7 +38,7 @@
         font-size: 12px;
         font-weight: 600;
         .highlight {
-          color: #fff;
+          color: #ffff00;
         }
       }
       svg {

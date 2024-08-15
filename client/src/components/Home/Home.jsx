@@ -1,4 +1,3 @@
-import "./Home.scss";
 import { useEffect, useContext } from "react";
 import Banner from "./Banner/Banner";
 import Category from "./Category/Category";
@@ -31,8 +30,8 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <div className="main-content">
-        <div className="layout">
+      <div className=" w-full pl-40 pr-40">
+        <div className=" flex flex-col gap-[75px]">
           <Category categories={categories} />
           <Products products={products} headingText="Popular Products" />
         </div>

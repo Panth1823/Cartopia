@@ -5,7 +5,6 @@ import { Context } from "../../utils/context";
 import CartItem from "./CartItem/CartItem";
 import { loadStripe } from "@stripe/stripe-js";
 import { makePaymentRequest } from "../../utils/api";
-import "./Cart.scss";
 
 const Cart = () => {
   const { cartItems, setShowCart, cartSubTotal } = useContext(Context);
@@ -31,36 +30,55 @@ const Cart = () => {
   };
 
   return (
-    <div className="cart-panel">
-      <div className="opac-layer" onClick={() => setShowCart(false)}></div>
-      <div className="cart-content">
-        <div className="cart-header">
-          <span className="heading">Cart</span>
-          <span className="close-btn" onClick={() => setShowCart(false)}>
-            <MdClose className="close-btn" />
+    <div className="fixed inset-0 z-[9999] flex justify-end">
+      <div
+        className="absolute inset-0 bg-black bg-opacity-50"
+        onClick={() => setShowCart(false)}
+      ></div>
+
+      <div className="relative h-full w-full md:w-[340px] bg-[#1a1a1a] flex flex-col animate-slideCartWindow">
+        {/* Cart Header */}
+        <div className="flex items-center justify-end p-5 border-b border-black/10">
+          <span className="flex-grow text-lg font-bold text-white uppercase">
+            Cart
+          </span>
+          <span className="flex items-center gap-1 cursor-pointer text-white hover:opacity-50">
+            <MdClose className="text-lg" onClick={() => setShowCart(false)} />
           </span>
         </div>
 
+        {/* Empty Cart */}
         {!cartItems.length && (
-          <div className="empty-cart">
-            <BsCartX />
+          <div className="flex flex-col items-center mt-24 gap-5 text-white">
+            <BsCartX className="text-[120px] opacity-10" />
             <span>No products in the cart.</span>
-            <button className="return-cta" onClick={() => {}}>
+            <button className="bg-yellow-500 text-[#1a1a1a] px-4 py-2 font-medium hover:shadow-md">
               RETURN TO SHOP
             </button>
           </div>
         )}
 
+        {/* Cart Items */}
         {!!cartItems.length && (
           <>
             <CartItem />
-            <div className="cart-footer">
-              <div className="subtotal">
-                <span className="text">Subtotal:</span>
-                <span className="text total">&#8377;{cartSubTotal}</span>
+            <div className="mt-auto border-t border-white">
+              {/* Subtotal */}
+              <div className="flex justify-between p-5 border-t border-b border-white">
+                <span className="text-lg font-bold text-white uppercase">
+                  Subtotal:
+                </span>
+                <span className="text-lg font-bold text-white uppercase">
+                  &#8377;{cartSubTotal}
+                </span>
               </div>
-              <div className="button">
-                <button className="checkout-cta" onClick={handlePayment}>
+
+              {/* Checkout Button */}
+              <div className="p-5">
+                <button
+                    className="w-full bg-customYellow text-[#1a1a1a] py-3 text-lg font-bold uppercase hover:shadow-md"
+                  onClick={handlePayment}
+                >
                   Checkout
                 </button>
               </div>

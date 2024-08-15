@@ -1,16 +1,17 @@
-import "./Category.scss";
 import { useParams } from "react-router-dom";
 import Products from "../Products/Products";
 import useFetch from "../../hooks/useFetch";
+
 const Category = () => {
   const { id } = useParams();
   const { data } = useFetch(
     `/api/products?populate=*&[filters][categories][id]=${id}`
   );
+
   return (
-    <div className="category-main-content">
-      <div className="layout">
-        <div className="category-title">
+    <div className="my-8 md:my-20">
+      <div className="max-w-full mx-auto md:max-w-[1200px] px-5">
+        <div className="text-2xl text-white md:text-4xl">
           {
             data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes
               ?.title
