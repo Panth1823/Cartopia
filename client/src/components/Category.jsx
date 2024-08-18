@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import Products from "../Products/Products";
-import useFetch from "../../hooks/useFetch";
+import Products from "./Products";
+import useFetch from "../hooks/useFetch";
 
 const Category = () => {
   const { id } = useParams();
@@ -10,7 +10,7 @@ const Category = () => {
 
   return (
     <div className="my-8 md:my-20">
-      <div className="max-w-full mx-auto md:max-w-[1200px] px-5">
+      <div className="max-w-[calc(100%-20px)] mx-auto md:max-w-[1200px] px-5">
         <div className="text-2xl text-white md:text-4xl">
           {
             data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes

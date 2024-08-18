@@ -21,15 +21,15 @@ const Banner = () => {
           quos qui accusantium.
         </p>
         <div className="flex justify-center gap-3 sm:gap-5">
-          <div class="flex gap-6">
+          <div className="flex gap-6">
             <button
-              class="h-12 border-black  p-2.5 bg-[#f5f5f5]  hover:bg-customYellow hover:shadow-[2px_2px_0px_rgba(255,255,255,1)] active:bg-[#f5f5f5]"
+              className="h-12 border-black  p-2.5 bg-[#f5f5f5]  hover:bg-customYellow hover:shadow-[2px_2px_0px_rgba(255,255,255,1)] active:bg-[#f5f5f5]"
               onClick={() => navigate("/about")}
             >
               About Us
             </button>
             <button
-              class="h-12 border-black  p-2.5 bg-customYellow hover:bg-[#f5f5f5] hover:shadow-[2px_2px_0px_rgba(255,255,0,1)] active:bg-[#f5f5f5]"
+              className="h-12 border-black  p-2.5 bg-customYellow hover:bg-[#f5f5f5] hover:shadow-[2px_2px_0px_rgba(255,255,0,1)] active:bg-[#f5f5f5]"
               onClick={scrollToProducts}
             >
               Shop Now

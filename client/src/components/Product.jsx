@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-import prod from "../../../assets/products/earbuds-prod-1.webp";
+import prod from "../assets/products/earbuds-prod-1.webp";
 
 const Product = ({
   id,

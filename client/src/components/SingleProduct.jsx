@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import { Context } from "../../utils/context";
+import { Context } from "../utils/context";
 import { useParams } from "react-router-dom";
-import useFetch from "../../hooks/useFetch";
-import RelatedProducts from "./RelatedProducts/RelatedProducts";
+import useFetch from "../hooks/useFetch";
+import RelatedProducts from "./RelatedProducts";
 import { FaCartPlus } from "react-icons/fa";
 
 const SingleProduct = () => {

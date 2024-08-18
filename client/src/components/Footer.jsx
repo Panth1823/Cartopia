@@ -1,7 +1,6 @@
 import React from "react";
-import "./Footer.scss";
-// import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+// import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -53,8 +52,8 @@ const Footer = () => {
                   fill="url(#paint0_linear_9129_4680)"
                 ></path>
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M0 4.54673C0 2.03564 2.07211 0 4.62819 0H21.5399V0.00124069C28.9908 0.0998525 35 6.06429 35 13.4075C35 20.8123 28.8897 26.8151 21.3523 26.8151C18.6648 26.8151 16.1587 26.052 14.0463 24.7342L6.58815 31.9057C4.13431 34.2652 0 32.5573 0 29.1841V4.54673ZM11.5194 22.7055C9.15709 20.295 7.70452 17.0179 7.70452 13.4075C7.70452 12.5277 8.43056 11.8144 9.32619 11.8144C10.2218 11.8144 10.9479 12.5277 10.9479 13.4075C10.9479 19.0526 15.6061 23.6288 21.3523 23.6288C27.0985 23.6288 31.7567 19.0526 31.7567 13.4075C31.7567 7.76248 27.0985 3.18626 21.3523 3.18626H4.62819C3.86336 3.18626 3.24334 3.79536 3.24334 4.54673V29.1841C3.24334 29.7351 3.91866 30.014 4.31948 29.6286L11.5194 22.7055Z"
                   fill="url(#paint1_linear_9129_4680)"
                 ></path>
@@ -67,8 +66,8 @@ const Footer = () => {
                     y2="33.4573"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7C3AED"></stop>
-                    <stop offset="0.993738" stop-color="#4F46E5"></stop>
+                    <stop stopColor="#7C3AED"></stop>
+                    <stop offset="0.993738" stopColor="#4F46E5"></stop>
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear_9129_4680"
@@ -78,8 +77,8 @@ const Footer = () => {
                     y2="33.4573"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7C3AED"></stop>
-                    <stop offset="0.993738" stop-color="#4F46E5"></stop>
+                    <stop stopColor="#7C3AED"></stop>
+                    <stop offset="0.993738" stopColor="#4F46E5"></stop>
                   </linearGradient>
                 </defs>
               </svg>
@@ -161,8 +160,8 @@ const Footer = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M26.3106 1.27838C27.5782 1.62071 28.5745 2.61957 28.9113 3.88573C29.524 6.18356 29.524 10.9809 29.524 10.9809C29.524 10.9809 29.524 15.7782 28.9113 18.076C28.5698 19.3469 27.5735 20.3457 26.3106 20.6834C24.0186 21.2977 14.8226 21.2977 14.8226 21.2977C14.8226 21.2977 5.63122 21.2977 3.33456 20.6834C2.06695 20.3411 1.07063 19.3422 0.73385 18.076C0.121094 15.7782 0.121094 10.9809 0.121094 10.9809C0.121094 10.9809 0.121094 6.18356 0.73385 3.88573C1.07531 2.61488 2.07162 1.61602 3.33456 1.27838C5.63122 0.664062 14.8226 0.664062 14.8226 0.664062C14.8226 0.664062 24.0186 0.664062 26.3106 1.27838ZM19.5234 10.9809L11.885 15.403V6.55872L19.5234 10.9809Z"
                     fill="currentColor"
                   />

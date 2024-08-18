@@ -18,7 +18,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://cartopia-store.vercel.app', 'https://cartopia-production.up.railway.app'],  //['http://localhost:3000'] to run locally
+      origin: ['https://cartopia-store.vercel.app', 'https://cartopia-production.up.railway.app','http://localhost:3000'],  //['http://localhost:3000'] to run locally
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization'],
       keepHeadersOnError: true,

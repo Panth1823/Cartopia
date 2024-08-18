@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { MdClose } from "react-icons/md";
 import { BsCartX } from "react-icons/bs";
-import { Context } from "../../utils/context";
-import CartItem from "./CartItem/CartItem";
+import { Context } from "../utils/context";
+import CartItem from "./CartItem";
 import { loadStripe } from "@stripe/stripe-js";
-import { makePaymentRequest } from "../../utils/api";
+import { makePaymentRequest } from "../utils/api";
 
 const Cart = () => {
   const { cartItems, setShowCart, cartSubTotal } = useContext(Context);
@@ -52,8 +52,8 @@ const Cart = () => {
           <div className="flex flex-col items-center mt-24 gap-5 text-white">
             <BsCartX className="text-[120px] opacity-10" />
             <span>No products in the cart.</span>
-            <button className=" bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium  hover:shadow-[3px_3px_1px_rgba(255,255,255,1)]">
-              RETURN TO SHOP
+            <button className=" bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium  hover:shadow-[3px_3px_0px_rgba(255,255,255,1)]">
+              Return To Shop
             </button>
           </div>
         )}

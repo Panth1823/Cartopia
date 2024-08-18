@@ -1,13 +1,13 @@
 import { useEffect, useContext } from "react";
-import Banner from "./Banner/Banner";
-import Category from "./Category/Category";
-import Products from "../Products/Products";
-import { fetchDataFromApi } from "../../utils/api";
-import { Context } from "../../utils/context";
+import Banner from "./Banner";
+import Category from "./HomeCategory";
+import Products from "./Products";
+import { fetchDataFromApi } from "../utils/api";
+import { Context } from "../utils/context";
 const Home = () => {
   const { categories, setCategories, products, setProducts } =
     useContext(Context);
-    
+
   useEffect(() => {
     getCategories();
     getProducts();
