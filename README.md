@@ -56,3 +56,9 @@ Replace the placeholder values with your actual configuration values.
 
 Save the .env file and restart your application to apply the changes.
 ```
+
+## Contributing
+```plaintext
+Feel free to contribute to the project by submitting issues or pull requests.
+If you find this project useful, consider starring the repository to show your support!
+```
