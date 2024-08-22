@@ -7,6 +7,10 @@ module.exports = {
       colors: {
         customYellow: '#ffff00',
       },
+      fontFamily: {
+        lexend: ['Lexend Mega', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -9,7 +9,7 @@ const RelatedProducts = ({ categoryId, productId }) => {
 
   return (
     <div className=" pt-9">
-      <Products headingText="Related Products" products={data} />
+      <Products headingText="Similar Products" products={data} />
     </div>
   );
 };

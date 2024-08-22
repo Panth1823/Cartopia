@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Cart from "./Cart";
 import { Context } from "../utils/context";
 
-const Header = () => {
+const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const handleScroll = () => {
@@ -40,11 +40,10 @@ const Header = () => {
   return (
     <>
       <header
-        className={`w-[90%] mx-auto backdrop-blur-md bg-transparent text-white z-[150] rounded-full transition-all duration-300 ${
-          scrolled ? "sticky top-0 shadow-lg" : ""
-        }`}
+        className={`w-full backdrop-blur-md bg-transparent text-white z-[150] rounded-full transition-all duration-300 ${scrolled ? "sticky top-0 shadow-lg" : ""
+          }`}
       >
-        <div className="flex justify-between items-center h-12 md:h-16 max-w-6xl mx-auto px-6 md:px-10">
+        <div className="flex justify-between items-center h-12 md:h-16 max-w-6xl mx-auto ">
           <ul className="hidden md:flex items-center gap-6">
             <li
               onClick={() => navigate("/")}
@@ -86,4 +85,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

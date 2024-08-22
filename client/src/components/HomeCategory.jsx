@@ -4,7 +4,7 @@ const Category = ({ categories }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="categories-container my-6 md:my-12">
+    <div className="categories-container ">
       <div className="flex flex-wrap gap-2.5">
         {categories?.data?.map((item) => (
           <div

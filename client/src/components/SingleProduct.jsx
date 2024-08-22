@@ -20,10 +20,10 @@ const SingleProduct = () => {
   const product = data?.data?.[0]?.attributes;
 
   return (
-    <div className="text-white my-5 md:my-20">
-      <div className="max-w-[calc(100%-20px)] mx-auto md:max-w-[1200px]">
+    <div className="text-white">
+      <div className=" w-full pl-40 pr-40 pb-20 pt-20">
         <div className="flex flex-col md:flex-row">
-          <div className="w-full   flex-shrink-0 border-4 border-white md:w-[600px] h-[600px]">
+          <div className="w-full  flex-shrink-0 border-none md:w-[600px] h-[600px]">
             <img
               src={product?.img?.data?.[0]?.attributes?.url || ""}
               alt={product?.title || "Product Image"}

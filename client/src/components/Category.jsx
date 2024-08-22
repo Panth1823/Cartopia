@@ -9,9 +9,9 @@ const Category = () => {
   );
 
   return (
-    <div className="my-8 md:my-20">
-      <div className="max-w-[calc(100%-20px)] mx-auto md:max-w-[1200px] px-5">
-        <div className="text-2xl text-white md:text-4xl">
+    <div className="flex flex-col gap-12 pt-8 md:pt-20 p-40">
+      <div className="">
+        <div className="text-2xl text-customYellow md:text-3xl">
           {
             data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes
               ?.title

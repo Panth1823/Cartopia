@@ -4,6 +4,7 @@ import Category from "./HomeCategory";
 import Products from "./Products";
 import { fetchDataFromApi } from "../utils/api";
 import { Context } from "../utils/context";
+import Footer from "./Footer";
 const Home = () => {
   const { categories, setCategories, products, setProducts } =
     useContext(Context);
@@ -11,7 +12,6 @@ const Home = () => {
   useEffect(() => {
     getCategories();
     getProducts();
-    // eslint-disable-next-line
   }, []);
 
   const getProducts = () => {
@@ -28,7 +28,7 @@ const Home = () => {
     });
   };
   return (
-    <div>
+    <div className=" flex flex-col gap-28">
       <Banner />
       <div className=" w-full pl-40 pr-40">
         <div className=" flex flex-col gap-[75px]">
@@ -36,6 +36,7 @@ const Home = () => {
           <Products products={products} headingText="Popular Products" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
