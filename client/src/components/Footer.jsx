@@ -10,13 +10,13 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="p-16 lg:px-40 font-lexend">
+      <footer className="p-16 lg:px-5 font-lexend">
         <div className=" w-full">
           <div className="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-500">
             <a
               href="/"
               onClick={handleClick}
-              className=" font-lexend text-white text-3xl"
+              className=" font-lexend text-white text-3xl hover:text-customYellow"
             >
               Cartopia
             </a>

@@ -49,11 +49,15 @@ const Cart = () => {
           <div className="flex flex-col items-center mt-24 gap-5 text-white">
             <BsCartX className="text-[120px] " fill="#f5f5f5" />
             <span>Cart is empty</span>
-            <button className=" bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium  hover:shadow-[3px_3px_0px_rgba(255,255,255,1)]">
+            <button
+              className="bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium hover:shadow-[3px_3px_0px_rgba(255,255,255,1)]"
+              onClick={() => setShowCart(false)}
+            >
               Return To Shop
             </button>
           </div>
         )}
+
         {!!cartItems.length && (
           <>
             <CartItem />
