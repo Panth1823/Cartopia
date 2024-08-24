@@ -4,6 +4,7 @@ import { Navigate, useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import RelatedProducts from "./RelatedProducts";
 import { FaCartPlus } from "react-icons/fa";
+import Spline from '@splinetool/react-spline';
 
 const SingleProduct = () => {
   const [quantity, setQuantity] = useState(1);
@@ -24,11 +25,12 @@ const SingleProduct = () => {
       <div className=" w-full pl-40 pr-40 pb-20 pt-20 flex flex-col gap-20">
         <div className="flex flex-col md:flex-row">
           <div className="w-full  flex-shrink-0 border-none md:w-[600px] h-[600px]">
-            <img
+            {/* <img
               src={product?.img?.data?.[0]?.attributes?.url || ""}
               alt={product?.title || "Product Image"}
               className="w-full h-full block"
-            />
+            /> */}
+            <Spline scene="https://prod.spline.design/CmghI2bgxfgkVpu6/scene.splinecode" />
           </div>
           <div className="flex flex-col gap-5 md:pl-9">
             <span className="text-[20px] capitalize leading-[28px] md:text-[24px] md:leading-[32px]">
