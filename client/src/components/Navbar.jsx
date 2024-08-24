@@ -45,11 +45,11 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`w-full backdrop-blur-md bg-transparent text-white z-[150] rounded-full transition-all duration-300 ${scrolled ? "sticky top-0 shadow-lg" : ""
+        className={`w-full backdrop-blur-md bg-transparent font-lexend font-semibold text-3xl text-white z-[150]  transition-all duration-300 ${scrolled ? "sticky top-0 shadow-lg " : ""
           }`}
       >
-        <div className="flex justify-between items-center h-12 md:h-16 max-w-6xl mx-auto ">
-          <ul className="hidden md:flex items-center gap-6">
+        <div className="flex justify-between items-center h-12 md:h-16 w-full pl-40 pr-40 md:pl-20 md:pr-20 sm:pr-5 sm:pl-5">
+          <ul className="flex items-center gap-10 h-full">
             <li
               onClick={() => navigate("/")}
               className="text-sm font-semibold uppercase cursor-pointer"
@@ -77,7 +77,7 @@ const Navbar = () => {
             >
               <CgShoppingCart className="text-lg" />
               {!!cartCount && (
-                <span className="absolute top-[-8px] right-[-10px] bg-customYellow text-black rounded-full w-5 h-5 text-xs font-bold flex items-center justify-center">
+                <span className="absolute top-[-8px] right-[-10px] bg-customYellow text-black rounded-full w-4 h-4 text-xs font-bold flex items-center justify-center">
                   {cartCount}
                 </span>
               )}

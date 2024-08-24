@@ -9,17 +9,19 @@ const Category = () => {
   );
 
   return (
-    <div className="flex flex-col gap-12 pt-8 md:pt-20 p-40">
-      <div className="">
-        <div className="text-2xl text-customYellow md:text-3xl">
-          {
-            data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes
-              ?.title
-          }
+    <>
+      <div className="flex flex-col gap-12 pt-8 md:pt-20 p-40">
+        <div className="">
+          <div className="text-2xl text-white md:text-3xl">
+            {
+              data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes
+                ?.title
+            }
+          </div>
         </div>
+        <Products innerpage={true} products={data} />
       </div>
-      <Products innerpage={true} products={data} />
-    </div>
+    </>
   );
 };
 

@@ -12,28 +12,31 @@ const Product = ({
 
   return (
     <div
-      className="flex flex-col w-[calc(25%-15px)] gap-5 cursor-pointer"
+      className="w-full h-full border-black border-2 rounded-md hover:shadow-[4px_4px_0px_rgba(255,255,0,1)] bg-white cursor-pointer"
       onClick={() => navigate("/product/" + id)}
     >
-      <div className="w-full h-44 md:h-[350px]  flex items-center hover:shadow-[3px_3px_0px_rgba(255,255,0,1)] transition-all duration-300 border-4 border-black">
-        <img
-          src={imageUrl}
-          alt={data?.title ?? "Product Image"}
-          className="transition-all duration-300 block w-full h-full object-contain"
-          onError={(e) => {
-            e.target.onerror = null; // Prevent looping
-            e.target.src = prod; // Fallback image
-          }}
-        />
-      </div>
-      <div className="flex flex-col gap-2.5">
-        <span className="text-[15px] md:text-[20px] text-white capitalize font-montserrat truncate">
-          {data?.title ?? "Product Title"}
-        </span>
-        <span className="text-[20px] text-[#ffff00] font-montserrat">
-          &#8377;{data?.price ?? "Price not available"}
-        </span>
-      </div>
+      <article className="w-full h-full">
+        <figure className="w-full border-black border-b-2">
+          <img
+            src={imageUrl}
+            alt={data?.title ?? "Product Image"}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = prod;
+            }}
+          />
+        </figure>
+        <div className="px-6 py-5 text-left h-fit">
+          <h1 className="text-xl mb-4 capitalize text-black">
+            {data?.title
+              ? data.title.split(" ").slice(0, 2).join(" ") +
+              (data.title.split(" ").length > 2 ? "..." : "")
+              : "Product Title"}
+          </h1>
+          <strong className="text-black text-sm">View More</strong>
+        </div>
+      </article>
     </div>
   );
 };

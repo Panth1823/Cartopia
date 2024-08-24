@@ -28,7 +28,7 @@ const Home = () => {
     });
   };
   return (
-    <div className=" flex flex-col gap-28 sm:gap-10">
+    <div className=" flex flex-col gap-40 ">
       <Banner />
       <div className=" w-full pl-40 pr-40 md:pl-5 md:pr-5 sm:pr-5 sm:pl-5">
         <div className=" flex flex-col gap-[75px]">

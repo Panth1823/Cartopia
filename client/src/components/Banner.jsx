@@ -25,7 +25,7 @@ const Banner = () => {
         <div className="flex justify-center gap-3 sm:gap-5">
           <div className="flex gap-6">
             <button
-              className="h-12 border-black  p-2.5 bg-customYellow hover:bg-[#f5f5f5] hover:shadow-[2px_2px_0px_rgba(255,255,0,1)] active:bg-[#f5f5f5]"
+              className="h-12 border-black  p-2.5 bg-customYellow hover:bg-[#f5f5f5] hover:shadow-[3px_3px_0px_rgba(255,255,0,1)] active:bg-[#f5f5f5] rounded-md transition-all duration-300  border-2"
               onClick={scrollToProducts}
             >
               Shop Now

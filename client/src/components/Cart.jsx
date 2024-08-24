@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { MdClose } from "react-icons/md";
 import { BsCartX } from "react-icons/bs";
 import { Context } from "../utils/context";
 import CartItem from "./CartItem";
@@ -8,19 +7,15 @@ import { makePaymentRequest } from "../utils/api";
 
 const Cart = () => {
   const { cartItems, setShowCart, cartSubTotal } = useContext(Context);
-
-  // Use import.meta.env to access environment variables
   const stripePromise = loadStripe(
     import.meta.env.VITE_REACT_APP_STRIPE_PUBLISHABLE_KEY
   );
-
   const handlePayment = async () => {
     try {
       const stripe = await stripePromise;
       const res = await makePaymentRequest.post("/api/orders", {
         products: cartItems,
       });
-
       await stripe.redirectToCheckout({
         sessionId: res.data.stripeSession.id,
       });
@@ -28,21 +23,17 @@ const Cart = () => {
       console.log(err);
     }
   };
-
   return (
     <div className="fixed inset-0 z-[9999] flex justify-end">
       <div
         className="absolute inset-0 bg-black bg-opacity-50"
         onClick={() => setShowCart(false)}
-      ></div>
-
+      >
+      </div>
       <div className="relative h-full w-full md:w-[340px] bg-[#1a1a1a] flex flex-col animate-slideCartWindow">
         <div className="flex items-center justify-end p-5 border-b border-black/10">
           <span className="flex-grow text-lg font-bold text-white uppercase">
             Cart
-          </span>
-          <span className="flex items-center gap-1 cursor-pointer text-white hover:opacity-50">
-            <MdClose className="text-lg" onClick={() => setShowCart(false)} />
           </span>
         </div>
         {!cartItems.length && (
@@ -50,14 +41,13 @@ const Cart = () => {
             <BsCartX className="text-[120px] " fill="#f5f5f5" />
             <span>Cart is empty</span>
             <button
-              className="bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium hover:shadow-[3px_3px_0px_rgba(255,255,255,1)]"
+              className="bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium hover:shadow-[3px_3px_0px_rgba(255,255,255,1)] transition-all duration-300  border-2 border-black rounded-md"
               onClick={() => setShowCart(false)}
             >
               Return To Shop
             </button>
           </div>
         )}
-
         {!!cartItems.length && (
           <>
             <CartItem />
@@ -72,7 +62,7 @@ const Cart = () => {
               </div>
               <div className="p-5">
                 <button
-                  className="w-full bg-customYellow text-[#1a1a1a] py-3 text-lg font-bold uppercase hover:shadow-[3px_3px_1px_rgba(255,255,255,1)]"
+                  className="w-full bg-customYellow text-[#1a1a1a] py-3 text-lg font-bold uppercase hover:shadow-[3px_3px_1px_rgba(255,255,255,1)] transition-all duration-300  border-2 rounded-md border-black"
                   onClick={handlePayment}
                 >
                   Checkout
