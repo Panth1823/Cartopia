@@ -22,7 +22,7 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="p-16 lg:px-5 font-lexend md:p-5 sm:p-5">
+      <footer className="lg:px-5 font-lexend md:p-5 sm:p-5 lg:pl-40 lg:pr-40 p-5 pb-20 pt-20">
         <div className=" w-full">
           <div className="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-500 ">
             <div

@@ -8,7 +8,7 @@ const Products = ({ products, innerpage, headingText }) => {
           {headingText}
         </div>
       )}
-      <div className="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-10">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
         {products?.data?.map((item) => (
           <Product key={item.id} id={String(item.id)} data={item.attributes} />
         ))}

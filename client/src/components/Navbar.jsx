@@ -43,7 +43,7 @@ const Navbar = () => {
         className={`w-full backdrop-blur-md bg-transparent font-lexend font-semibold text-3xl text-white z-[150]  transition-all duration-300 ${scrolled ? "sticky top-0 shadow-lg " : ""
           }`}
       >
-        <div className="flex justify-between items-center h-12 md:h-16 w-full pl-40 pr-40 md:pl-20 md:pr-20 sm:pr-5 sm:pl-5">
+        <div className="flex justify-between items-center h-12 md:h-16 w-full lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 sm:pr-5 sm:pl-5 sm:text-xs pl-5 pr-5">
           <ul className="flex items-center gap-10 h-full">
             <li
               onClick={() => navigate("/")}
