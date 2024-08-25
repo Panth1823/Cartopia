@@ -72,17 +72,17 @@ const Footer = () => {
             </span>
             <div className="flex items-center gap-4">
               <div className="grid grid-cols-3 gap-5">
-                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]">
+                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]" name="Github">
                   <a href="https://github.com/Panth1823" target="blank">
                     <RiGithubLine className=" w-full h-5" />
                   </a>
                 </button>
-                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]">
+                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]" name="Linkedin">
                   <a href="https://www.linkedin.com/in/panth1823/" target="blank">
                     <RiLinkedinLine className=" w-full h-5" />
                   </a>
                 </button>
-                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]">
+                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]" name="Twitter">
                   <a href="https://x.com/panth1823" target="blank">
                     <RiTwitterXLine className=" w-full h-5" />
                   </a>

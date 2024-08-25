@@ -67,6 +67,7 @@ const SingleProduct = () => {
                   handleAddToCart(data?.data?.[0], quantity);
                   setQuantity(1);
                 }}
+                name="Add To Cart"
               >
                 <FaCartPlus size={20} className="mr-2 " />
                 ADD TO CART

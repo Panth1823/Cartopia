@@ -43,6 +43,7 @@ const Cart = () => {
             <button
               className="bg-customYellow text-[#1a1a1a] px-4 py-2 font-medium hover:shadow-[3px_3px_0px_rgba(255,255,255,1)] transition-all duration-300  border-2 border-black rounded-md"
               onClick={() => setShowCart(false)}
+              name="Return To Shop"
             >
               Return To Shop
             </button>
@@ -64,6 +65,7 @@ const Cart = () => {
                 <button
                   className="w-full bg-customYellow text-[#1a1a1a] py-3 text-lg font-bold uppercase hover:shadow-[3px_3px_1px_rgba(255,255,255,1)] transition-all duration-300  border-2 rounded-md border-black"
                   onClick={handlePayment}
+                  name="Checkout"
                 >
                   Checkout
                 </button>
