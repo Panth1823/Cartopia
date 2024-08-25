@@ -62,33 +62,37 @@ const Footer = () => {
           <div className="pt-7 flex flex-col min-[520px]:flex-row items-center justify-between gap-6">
             <span className="text-sm font-normal text-gray-300">
               Made with ❤️ by{" "}
-              <a
-                href="https://github.com/Panth1823"
-                target="blank"
-                className=" text-customYellow"
-              >
+              <a href="https://github.com/Panth1823" target="_blank" className="text-customYellow font-lexend font-bold" aria-label="Visit Panth Shah's GitHub profile" rel="noreferrer">
                 Panth Shah
               </a>
             </span>
-            <div className="flex items-center gap-4">
-              <div className="grid grid-cols-3 gap-5">
-                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]" name="Github">
-                  <a href="https://github.com/Panth1823" target="blank">
-                    <RiGithubLine className=" w-full h-5" />
-                  </a>
-                </button>
-                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]" name="Linkedin">
-                  <a href="https://www.linkedin.com/in/panth1823/" target="blank">
-                    <RiLinkedinLine className=" w-full h-5" />
-                  </a>
-                </button>
-                <button className="border-black border-2 rounded-md bg-customYellow hover:bg-white  w-8 h-8 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]" name="Twitter">
-                  <a href="https://x.com/panth1823" target="blank">
-                    <RiTwitterXLine className=" w-full h-5" />
-                  </a>
-                </button>
-              </div>
+            <div className="grid grid-cols-3 gap-5">
+              <button
+                className="border-black border-2 rounded-md bg-customYellow hover:bg-white w-10 h-10 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]"
+                aria-label="Github"
+              >
+                <a href="https://github.com/Panth1823" target="_blank" rel="noreferrer" aria-label="Visit Panth's GitHub profile">
+                  <RiGithubLine className="w-full h-6" />
+                </a>
+              </button>
+              <button
+                className="border-black border-2 rounded-md bg-customYellow hover:bg-white w-10 h-10 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]"
+                aria-label="Linkedin"
+              >
+                <a href="https://www.linkedin.com/in/panth1823/" target="_blank" rel="noreferrer" aria-label="Visit Panth's LinkedIn profile">
+                  <RiLinkedinLine className="w-full h-6" />
+                </a>
+              </button>
+              <button
+                className="border-black border-2 rounded-md bg-customYellow hover:bg-white w-10 h-10 hover:shadow-[2px_2px_0px_rgba(255,255,0,1)]"
+                aria-label="Twitter"
+              >
+                <a href="https://x.com/panth1823" target="_blank" rel="noreferrer" aria-label="Visit Panth's Twitter profile">
+                  <RiTwitterXLine className="w-full h-6" />
+                </a>
+              </button>
             </div>
+
           </div>
         </div>
       </footer>

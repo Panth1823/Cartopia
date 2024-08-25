@@ -1,15 +1,10 @@
-import { useNavigate } from "react-router-dom";
-
 const Banner = () => {
-  const navigate = useNavigate();
-
   const scrollToProducts = () => {
     const productsSection = document.querySelector(".products-container");
     if (productsSection) {
       productsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <div className=" h-[100vh] flex justify-center">
       <div className="text-center flex flex-col items-center w-full self-center gap-10 md:pl-40 md:pr-40">
@@ -25,9 +20,9 @@ const Banner = () => {
         <div className="flex justify-center gap-3 sm:gap-5">
           <div className="flex gap-6">
             <button
-              className="h-12 border-black  p-2.5 bg-customYellow hover:bg-[#f5f5f5] hover:shadow-[3px_3px_0px_rgba(255,255,0,1)] active:bg-[#f5f5f5] rounded-md transition-all duration-300  border-2"
+              className="h-12 border-black p-2.5 bg-customYellow hover:bg-[#f5f5f5] hover:shadow-[3px_3px_0px_rgba(255,255,0,1)] active:bg-[#f5f5f5] rounded-md transition-all duration-300 border-2"
               onClick={scrollToProducts}
-              name="Shop Now"
+              aria-label="Shop Now"
             >
               Shop Now
             </button>

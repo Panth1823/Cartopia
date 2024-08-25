@@ -5,13 +5,15 @@ export default defineConfig({
   plugins: [react()],
   esbuild: {
     loader: 'jsx',
-    include: /src\/.*\.[jt]sx?$/,  // Process all .js, .jsx, .ts, and .tsx files in the src directory
-    exclude: /node_modules/,       // Exclude the node_modules directory
+    include: /src\/.*\.[jt]sx?$/,
+    exclude: /node_modules/,
   },
   server: {
-    port: 3000,  // Optional: Specify the port
+    port: 3000,
   },
   build: {
-    outDir: 'build',  // Optional: Specify the output directory
+    outDir: 'build',
+    sourcemap: true,
+    target: 'esnext',
   }
 });

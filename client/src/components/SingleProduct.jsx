@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Context } from "../utils/context";
-import { Navigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import RelatedProducts from "./RelatedProducts";
 import { FaCartPlus } from "react-icons/fa";
@@ -30,7 +30,7 @@ const SingleProduct = () => {
               alt={product?.title || "Product Image"}
               className="w-full h-full block"
             /> */}
-            <Spline scene="https://prod.spline.design/CmghI2bgxfgkVpu6/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/CmghI2bgxfgkVpu6/scene.splinecode" className=" cursor-grabbing" />
           </div>
           <div className="flex flex-col gap-5 md:pl-9">
             <span className="text-[20px] capitalize leading-[28px] md:text-[24px] md:leading-[32px]">
@@ -67,7 +67,7 @@ const SingleProduct = () => {
                   handleAddToCart(data?.data?.[0], quantity);
                   setQuantity(1);
                 }}
-                name="Add To Cart"
+                aria-label="Add To Cart"
               >
                 <FaCartPlus size={20} className="mr-2 " />
                 ADD TO CART

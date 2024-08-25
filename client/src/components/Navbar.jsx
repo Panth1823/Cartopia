@@ -6,11 +6,6 @@ import Cart from "./Cart";
 import { Context } from "../utils/context";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  }
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const handleScroll = () => {
