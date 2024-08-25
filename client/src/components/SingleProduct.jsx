@@ -3,7 +3,6 @@ import { Context } from "../utils/context";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import RelatedProducts from "./RelatedProducts";
-import { FaCartPlus } from "react-icons/fa";
 import Spline from '@splinetool/react-spline';
 
 const SingleProduct = () => {
@@ -22,17 +21,17 @@ const SingleProduct = () => {
 
   return (
     <div className="text-white">
-      <div className=" w-full pl-40 pr-40 pb-20 pt-20 flex flex-col gap-20">
-        <div className="flex flex-col md:flex-row">
-          <div className="w-full  flex-shrink-0 border-none md:w-[600px] h-[600px]">
+      <div className=" w-full xl:pl-40 xl:pr-40 lg:pr-5 lg:pl-5 pb-20 pt-20 flex flex-col gap-20 md:pr-5 md:pl-5 pr-5 pl-5 sm:pr-5 sm:pl-5">
+        <div className="flex flex-col gap-0 lg:flex-row md:flex-col md:gap-0 sm:gap-0 lg:gap-10  sm:flex-col">
+          <div className="w-full md:w-full h-[600px] sm:w-full lg:w-1/2  flex self-center">
             {/* <img
               src={product?.img?.data?.[0]?.attributes?.url || ""}
               alt={product?.title || "Product Image"}
               className="w-full h-full block"
             /> */}
-            <Spline scene="https://prod.spline.design/CmghI2bgxfgkVpu6/scene.splinecode" className=" cursor-grabbing" />
+            <Spline scene="https://prod.spline.design/CmghI2bgxfgkVpu6/scene.splinecode" className=" cursor-grabbing md:self-center flex " />
           </div>
-          <div className="flex flex-col gap-5 md:pl-9">
+          <div className="flex flex-col gap-5 lg:w-1/2">
             <span className="text-[20px] capitalize leading-[28px] md:text-[24px] md:leading-[32px]">
               {product?.title || "Product Title"}
             </span>
@@ -43,41 +42,40 @@ const SingleProduct = () => {
               {product?.desc || "No description available"}
             </span>
 
-            <div className="flex mt-5 md:mt-0 flex-row gap-7 w-fit">
-              <div className="flex border-2 border-white h-[50px] rounded-md">
+            <div className="flex pt-5 md:mt-0 flex-row gap-7 w-full">
+              <div className="flex border-2 border-white h-[50px] rounded-md  lg:w-72 md:w-52 sm:w-44 w-full">
                 <span
                   onClick={decrement}
-                  className="flex justify-center items-center w-[40px] cursor-pointer border-r-2 border-white text-[18px]"
+                  className="flex justify-center items-center cursor-pointer border-r-2 border-white text-[18px] w-full"
                 >
                   -
                 </span>
-                <span className="flex justify-center items-center w-[60px] text-[18px]">
+                <span className="flex justify-center items-center w-full text-[18px]">
                   {quantity}
                 </span>
                 <span
                   onClick={increment}
-                  className="flex justify-center items-center w-[40px] cursor-pointer border-l-2 border-white text-[18px]"
+                  className="flex justify-center items-center w-full cursor-pointer border-l-2 border-white text-[18px]"
                 >
                   +
                 </span>
               </div>
               <button
-                className="h-[50px] w-[180px] flex items-center justify-center bg-[#ffff00] text-black text-[16px] flex-grow md:flex-grow-0 hover:shadow-[3px_3px_0px_rgba(255,255,255,1)] rounded-md transition-all duration-300  border-2 border-black"
+                className="h-[50px] p-2 lg:w-72 md:w-52 sm:w-44 flex items-center justify-center bg-[#ffff00] text-black text-[16px]  hover:shadow-[3px_3px_0px_rgba(255,255,255,1)] rounded-md transition-all duration-300  border-2 border-black w-full"
                 onClick={() => {
                   handleAddToCart(data?.data?.[0], quantity);
                   setQuantity(1);
                 }}
                 aria-label="Add To Cart"
               >
-                <FaCartPlus size={20} className="mr-2 " />
                 ADD TO CART
               </button>
             </div>
 
-            <div className="mt-5">
-              <span className="text-[18px] font-medium flex flex-row gap-4 w-fit text-lexend">
+            <div className="pt-3">
+              <span className="text-[18px] font-normal flex flex-row w-fit text-lexend">
                 Category:
-                <span className="text-[16px] font-normal cursor-pointer " >
+                <span className="text-[16px] font-normal font-lexend cursor-pointer" >
                   {product?.categories?.data?.[0]?.attributes?.title ||
                     "Unknown"}
                 </span>

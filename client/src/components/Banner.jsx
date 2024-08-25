@@ -13,13 +13,13 @@ const Banner = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold leading-tight text-customYellow w-fit self-center">
             Cartopia
           </h1>
-          <p className=" w-full md:max-w-lg text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl leading-snug sm:leading-relaxed md:leading-loose text-gray-100 self-center">
+          <p className=" sm:w-2/3 md:max-w-lg text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl leading-snug sm:leading-relaxed md:leading-loose text-gray-100 self-center">
             Where awesome tech and amazing deals come together, Shop with a smile
           </p>
         </div>
         <div className="flex justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8">
           <button
-            className="h-12 px-4 py-2 border border-black bg-customYellow hover:bg-gray-200 hover:shadow-md active:bg-gray-300 rounded-md transition-all duration-300 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+            className="h-12 px-4 py-2 border border-black bg-customYellow hover:bg-gray-200  active:bg-gray-300 rounded-md transition-all duration-300 text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl hover:shadow-[4px_4px_0px_rgba(255,255,0,1)]"
             onClick={scrollToProducts}
             aria-label="Shop Now"
           >

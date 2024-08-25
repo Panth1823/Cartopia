@@ -10,7 +10,7 @@ const Category = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-12 pt-8 md:pt-20 p-40">
+      <div className="flex flex-col gap-12 pt-8 lg:pl-40 lg:pr-40 md:pl-20 md:pr-20 sm:pl-5 sm:pr-5 p-5">
         <div className="">
           <div className="text-2xl text-white md:text-3xl">
             {
