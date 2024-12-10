@@ -22,12 +22,16 @@ module.exports = [
         "https://cartopia-store.vercel.app",
         "https://cartopia-backend.onrender.com",
         "http://localhost:3000",
-      ],
+      ], //['http://localhost:3000'] to run locally
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
       headers: ["Content-Type", "Authorization"],
       keepHeadersOnError: true,
     },
   },
   "strapi::poweredBy",
-  // ...other middlewares...
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
 ];
